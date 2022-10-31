@@ -1,0 +1,34 @@
+{
+  "experiments": [
+    {
+      "syscall_name": "connect",
+      "error_code": "-EINPROGRESS",
+      "original_mean_rate": 0.5533400603307015,
+      "failure_rate": 0.5810070633472366
+    },
+    {
+      "syscall_name": "read",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.5257028767001656,
+      "failure_rate": 0.5519880205351739
+    },
+    {
+      "syscall_name": "accept4",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.4999862072454121,
+      "failure_rate": 0.5249855176076828
+    },
+    {
+      "syscall_name": "recvfrom",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.489371656618402,
+      "failure_rate": 0.5138402394493221
+    },
+    {
+      "syscall_name": "unlinkat",
+      "error_code": "-EISDIR",
+      "original_mean_rate": 0.329861111111111,
+      "failure_rate": 0.3463541666666666
+    }
+  ]
+}

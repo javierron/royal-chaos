@@ -1,0 +1,50 @@
+[
+  {
+    syscall_name: 'accept4',
+    error_code: '-EAGAIN',
+    original_mean_rate_min: 0.49993602563086587,
+    original_mean_rate_max: 0.49999599844333975
+  },
+  {
+    syscall_name: 'futex',
+    error_code: '-EAGAIN',
+    original_mean_rate_min: 0.006370325961455791,
+    original_mean_rate_max: 0.018139763738618097
+  },
+  {
+    syscall_name: 'read',
+    error_code: '-EAGAIN',
+    original_mean_rate_min: 0.0071054971413668025,
+    original_mean_rate_max: 0.5257028767001656
+  },
+  {
+    syscall_name: 'write',
+    error_code: '-EAGAIN',
+    original_mean_rate_min: 0.000048748802761108856,
+    original_mean_rate_max: 0.0003713840702718371
+  },
+  {
+    syscall_name: 'read',
+    error_code: '-ECONNRESET',
+    original_mean_rate_min: 0.000029680774805363074,
+    original_mean_rate_max: 0.0003994960951674025
+  },
+  {
+    syscall_name: 'write',
+    error_code: '-ECONNRESET',
+    original_mean_rate_min: 0.00004046520250513058,
+    original_mean_rate_max: 0.00007168315099106904
+  },
+  {
+    syscall_name: 'connect',
+    error_code: '-EINPROGRESS',
+    original_mean_rate_min: 0.3858333720736016,
+    original_mean_rate_max: 1
+  },
+  {
+    syscall_name: 'futex',
+    error_code: '-ETIMEDOUT',
+    original_mean_rate_min: 0.00003697943349965127,
+    original_mean_rate_max: 0.029963432698338503
+  }
+]

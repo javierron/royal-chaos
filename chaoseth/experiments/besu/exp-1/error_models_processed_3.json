@@ -1,0 +1,70 @@
+{
+  "experiments": [
+    {
+      "syscall_name": "accept4",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.49999599844333975,
+      "failure_rate": 0.5499955982876737
+    },
+    {
+      "syscall_name": "accept",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.49974488016484764,
+      "failure_rate": 0.5497193681813325
+    },
+    {
+      "syscall_name": "recvmsg",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.49122522770477417,
+      "failure_rate": 0.5403477504752516
+    },
+    {
+      "syscall_name": "futex",
+      "error_code": "-ETIMEDOUT",
+      "original_mean_rate": 0.029963432698338503,
+      "failure_rate": 0.03295977596817236
+    },
+    {
+      "syscall_name": "shutdown",
+      "error_code": "-ENOTCONN",
+      "original_mean_rate": 0.021680124027844878,
+      "failure_rate": 0.023848136430629368
+    },
+    {
+      "syscall_name": "futex",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.018139763738618097,
+      "failure_rate": 0.01995374011247991
+    },
+    {
+      "syscall_name": "read",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.0071054971413668025,
+      "failure_rate": 0.007816046855503484
+    },
+    {
+      "syscall_name": "writev",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.00040056928492806924,
+      "failure_rate": 0.0004406262134208762
+    },
+    {
+      "syscall_name": "read",
+      "error_code": "-ECONNRESET",
+      "original_mean_rate": 0.0001305081616996065,
+      "failure_rate": 0.00014355897786956715
+    },
+    {
+      "syscall_name": "write",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.00009735957614968466,
+      "failure_rate": 0.00010709553376465313
+    },
+    {
+      "syscall_name": "write",
+      "error_code": "-ECONNRESET",
+      "original_mean_rate": 0.00006003121623244087,
+      "failure_rate": 0.00006603433785568496
+    }
+  ]
+}

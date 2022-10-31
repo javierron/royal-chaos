@@ -1,0 +1,34 @@
+{
+  "experiments": [
+    {
+      "syscall_name": "accept4",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.49999599844333975,
+      "failure_rate": 0.5049959584277731
+    },
+    {
+      "syscall_name": "accept",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.49974488016484764,
+      "failure_rate": 0.5047423289664961
+    },
+    {
+      "syscall_name": "recvmsg",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.49122522770477417,
+      "failure_rate": 0.4961374799818219
+    },
+    {
+      "syscall_name": "futex",
+      "error_code": "-ETIMEDOUT",
+      "original_mean_rate": 0.029963432698338503,
+      "failure_rate": 0.030263067025321888
+    },
+    {
+      "syscall_name": "shutdown",
+      "error_code": "-ENOTCONN",
+      "original_mean_rate": 0.021680124027844878,
+      "failure_rate": 0.021896925268123327
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+/virtual/main.c:32:1: warning: declaration of 'struct tracepoint__raw_syscalls__sys_enter' will not be visible outside of this function [-Wvisibility]
+TRACEPOINT_PROBE(raw_syscalls, sys_enter) {
+^
+/virtual/include/bcc/helpers.h:1279:46: note: expanded from macro 'TRACEPOINT_PROBE'
+int tracepoint__##category##__##event(struct tracepoint__##category##__##event *args)
+                                             ^
+<scratch space>:40:1: note: expanded from here
+tracepoint__raw_syscalls__sys_enter
+^
+/virtual/main.c:51:1: warning: declaration of 'struct tracepoint__raw_syscalls__sys_exit' will not be visible outside of this function [-Wvisibility]
+TRACEPOINT_PROBE(raw_syscalls, sys_exit) {
+^
+/virtual/include/bcc/helpers.h:1279:46: note: expanded from macro 'TRACEPOINT_PROBE'
+int tracepoint__##category##__##event(struct tracepoint__##category##__##event *args)
+                                             ^
+<scratch space>:46:1: note: expanded from here
+tracepoint__raw_syscalls__sys_exit
+^
+/virtual/main.c:75:19: error: incomplete definition of type 'struct tracepoint__raw_syscalls__sys_exit'
+    u32 key = args->id;
+              ~~~~^
+/virtual/main.c:51:1: note: forward declaration of 'struct tracepoint__raw_syscalls__sys_exit'
+TRACEPOINT_PROBE(raw_syscalls, sys_exit) {
+^
+/virtual/include/bcc/helpers.h:1279:46: note: expanded from macro 'TRACEPOINT_PROBE'
+int tracepoint__##category##__##event(struct tracepoint__##category##__##event *args)
+                                             ^
+<scratch space>:46:1: note: expanded from here
+tracepoint__raw_syscalls__sys_exit
+^
+/virtual/main.c:76:13: error: incomplete definition of type 'struct tracepoint__raw_syscalls__sys_exit'
+    if (args->ret < 0)
+        ~~~~^
+/virtual/main.c:51:1: note: forward declaration of 'struct tracepoint__raw_syscalls__sys_exit'
+TRACEPOINT_PROBE(raw_syscalls, sys_exit) {
+^
+/virtual/include/bcc/helpers.h:1279:46: note: expanded from macro 'TRACEPOINT_PROBE'
+int tracepoint__##category##__##event(struct tracepoint__##category##__##event *args)
+                                             ^
+<scratch space>:46:1: note: expanded from here
+tracepoint__raw_syscalls__sys_exit
+^
+/virtual/main.c:77:19: error: incomplete definition of type 'struct tracepoint__raw_syscalls__sys_exit'
+        key = args->id + -(args->ret * 10000);
+              ~~~~^
+/virtual/main.c:51:1: note: forward declaration of 'struct tracepoint__raw_syscalls__sys_exit'
+TRACEPOINT_PROBE(raw_syscalls, sys_exit) {
+^
+/virtual/include/bcc/helpers.h:1279:46: note: expanded from macro 'TRACEPOINT_PROBE'
+int tracepoint__##category##__##event(struct tracepoint__##category##__##event *args)
+                                             ^
+<scratch space>:46:1: note: expanded from here
+tracepoint__raw_syscalls__sys_exit
+^
+/virtual/main.c:77:32: error: incomplete definition of type 'struct tracepoint__raw_syscalls__sys_exit'
+        key = args->id + -(args->ret * 10000);
+                           ~~~~^
+/virtual/main.c:51:1: note: forward declaration of 'struct tracepoint__raw_syscalls__sys_exit'
+TRACEPOINT_PROBE(raw_syscalls, sys_exit) {
+^
+/virtual/include/bcc/helpers.h:1279:46: note: expanded from macro 'TRACEPOINT_PROBE'
+int tracepoint__##category##__##event(struct tracepoint__##category##__##event *args)
+                                             ^
+<scratch space>:46:1: note: expanded from here
+tracepoint__raw_syscalls__sys_exit
+^
+/virtual/main.c:86:29: error: incomplete definition of type 'struct tracepoint__raw_syscalls__sys_exit'
+        val->error_no = args->ret;
+                        ~~~~^
+/virtual/main.c:51:1: note: forward declaration of 'struct tracepoint__raw_syscalls__sys_exit'
+TRACEPOINT_PROBE(raw_syscalls, sys_exit) {
+^
+/virtual/include/bcc/helpers.h:1279:46: note: expanded from macro 'TRACEPOINT_PROBE'
+int tracepoint__##category##__##event(struct tracepoint__##category##__##event *args)
+                                             ^
+<scratch space>:46:1: note: expanded from here
+tracepoint__raw_syscalls__sys_exit
+^
+2 warnings and 5 errors generated.
+Considering /home/javier/go-ethereum/data-dir with inode_id 26215507
+Traceback (most recent call last):
+  File "./client_monitor.py", line 816, in <module>
+    main(args)
+  File "./client_monitor.py", line 780, in main
+    bpf_for_syscall = BPF(text=text_for_syscall)
+  File "/usr/lib/python2.7/dist-packages/bcc/__init__.py", line 479, in __init__
+    raise Exception("Failed to compile BPF module %s" % (src_file or "<text>"))
+Exception: Failed to compile BPF module <text>

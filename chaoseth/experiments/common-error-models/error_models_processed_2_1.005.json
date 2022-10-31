@@ -1,0 +1,16 @@
+{
+  "experiments": [
+    {
+      "syscall_name": "accept4",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.49993602563086587,
+      "failure_rate": 0.5024357057590202
+    },
+    {
+      "syscall_name": "connect",
+      "error_code": "-EINPROGRESS",
+      "original_mean_rate": 0.3858333720736016,
+      "failure_rate": 0.38776253893396956
+    }
+  ]
+}

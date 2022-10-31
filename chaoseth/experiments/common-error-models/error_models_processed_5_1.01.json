@@ -1,0 +1,34 @@
+{
+  "experiments": [
+    {
+      "syscall_name": "accept4",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.49993602563086587,
+      "failure_rate": 0.5049353858871746
+    },
+    {
+      "syscall_name": "connect",
+      "error_code": "-EINPROGRESS",
+      "original_mean_rate": 0.3858333720736016,
+      "failure_rate": 0.3896917057943376
+    },
+    {
+      "syscall_name": "read",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.0071054971413668025,
+      "failure_rate": 0.007176552112780471
+    },
+    {
+      "syscall_name": "futex",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.006370325961455791,
+      "failure_rate": 0.0064340292210703495
+    },
+    {
+      "syscall_name": "write",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.000048748802761108856,
+      "failure_rate": 0.00004923629078871995
+    }
+  ]
+}

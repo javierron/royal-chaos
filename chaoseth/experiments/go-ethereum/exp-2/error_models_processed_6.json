@@ -1,0 +1,94 @@
+{
+  "experiments": [
+    {
+      "syscall_name": "connect",
+      "error_code": "-EINPROGRESS",
+      "original_mean_rate": 0.5533400603307015,
+      "failure_rate": 0.6086740663637716
+    },
+    {
+      "syscall_name": "read",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.5257028767001656,
+      "failure_rate": 0.5782731643701822
+    },
+    {
+      "syscall_name": "accept4",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.4999862072454121,
+      "failure_rate": 0.5499848279699533
+    },
+    {
+      "syscall_name": "recvfrom",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.489371656618402,
+      "failure_rate": 0.5383088222802422
+    },
+    {
+      "syscall_name": "unlinkat",
+      "error_code": "-EISDIR",
+      "original_mean_rate": 0.329861111111111,
+      "failure_rate": 0.3628472222222221
+    },
+    {
+      "syscall_name": "newfstatat",
+      "error_code": "-ENOENT",
+      "original_mean_rate": 0.28125,
+      "failure_rate": 0.309375
+    },
+    {
+      "syscall_name": "unlinkat",
+      "error_code": "-ENOTEMPTY",
+      "original_mean_rate": 0.1649305555555555,
+      "failure_rate": 0.18142361111111105
+    },
+    {
+      "syscall_name": "futex",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.011608542389571168,
+      "failure_rate": 0.012769396628528286
+    },
+    {
+      "syscall_name": "epoll_ctl",
+      "error_code": "-EPERM",
+      "original_mean_rate": 0.002948017075190355,
+      "failure_rate": 0.003242818782709391
+    },
+    {
+      "syscall_name": "write",
+      "error_code": "-EPIPE",
+      "original_mean_rate": 0.000052515885185542264,
+      "failure_rate": 0.000057767473704096495
+    },
+    {
+      "syscall_name": "write",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.000048748802761108856,
+      "failure_rate": 0.000053623683037219746
+    },
+    {
+      "syscall_name": "write",
+      "error_code": "-ECONNRESET",
+      "original_mean_rate": 0.00004046520250513058,
+      "failure_rate": 0.00004451172275564364
+    },
+    {
+      "syscall_name": "futex",
+      "error_code": "-ETIMEDOUT",
+      "original_mean_rate": 0.00003697943349965127,
+      "failure_rate": 0.000040677376849616397
+    },
+    {
+      "syscall_name": "read",
+      "error_code": "-ECONNRESET",
+      "original_mean_rate": 0.000029680774805363074,
+      "failure_rate": 0.000032648852285899384
+    },
+    {
+      "syscall_name": "epoll_pwait",
+      "error_code": "-EINTR",
+      "original_mean_rate": 0.000007328472835959179,
+      "failure_rate": 0.000008061320119555097
+    }
+  ]
+}

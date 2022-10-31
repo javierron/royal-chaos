@@ -7,7 +7,7 @@ scrape_configs:
   - job_name: 'syscall_monitoring'
     static_configs:
       # The url to pull the metrics
-      - targets: ['172.17.0.1:8000']
+      - targets: ['172.17.0.1:8000', '172.17.0.1:8001']
   # add other jobs if necessary, an example for openethereum clients
   # - job_name: 'openethereum'
   #   static_configs:
