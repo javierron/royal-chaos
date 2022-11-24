@@ -1,0 +1,22 @@
+{
+  "experiments": [
+    {
+      "syscall_name": "futex",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.022819130467642966,
+      "failure_rate": 0.02293322611998118
+    },
+    {
+      "syscall_name": "read",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.0070246118156363935,
+      "failure_rate": 0.007059734874714575
+    },
+    {
+      "syscall_name": "futex",
+      "error_code": "-ETIMEDOUT",
+      "original_mean_rate": 0.0013734402641238117,
+      "failure_rate": 0.0013803074654444305
+    }
+  ]
+}

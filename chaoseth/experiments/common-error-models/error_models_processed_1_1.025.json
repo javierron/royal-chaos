@@ -1,0 +1,10 @@
+{
+  "experiments": [
+    {
+      "syscall_name": "futex",
+      "error_code": "-EAGAIN",
+      "original_mean_rate": 0.022819130467642966,
+      "failure_rate": 0.023389608729334037
+    }
+  ]
+}
